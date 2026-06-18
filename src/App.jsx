@@ -7,7 +7,7 @@ import NotFound from './pages/NotFound';
 import Navbar from './components/Navbar';
 export default function App() {
  return (
- <BrowserRouter>
+ <HashRouter>
  <Navbar />
  <Routes>
  <Route path='/' element={<Home />} />
@@ -19,6 +19,6 @@ export default function App() {
  />
  <Route path='*' element={<NotFound />} />
  </Routes>
- </BrowserRouter>
+ </HashRouter>
  );
 }
